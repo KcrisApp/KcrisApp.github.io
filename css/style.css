@@ -2,7 +2,7 @@
     --orange: #f07848;
     --white: #f7f7f7;
     --black: #2e2e2e;
-    --cream: #353535;
+    --cream: #c8d6ca;
   }
 
 body{
@@ -43,6 +43,9 @@ body{
 .header a {
     color: #f7f7f7;
     
+}
+.header a:hover{
+    color: var(--orange);
 }
 .section{
 
