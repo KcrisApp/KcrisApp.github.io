@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
 :root {
-    --orange: #f07848;
-    --white: #f7f7f7;
-    --black: #2e2e2e;
-    --cream: #4b5a4d;
+    --orange: #DF6D14;
+    --text: #5f6457;
+    --title: #674636;
+    --cream: #F8F5E9;
   }
 
 body{
@@ -19,7 +20,19 @@ body{
     object-fit: cover;
     z-index: 0;
 }
-.header{
+
+#header__date__time{
+    display: inline-block;
+    font-size: 35px;
+    font-family: "Pixelify Sans", serif;
+    color: var(--text);
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header__nav{
     position: fixed;
     top: 0;
     right: 0;
@@ -41,11 +54,12 @@ body{
     cursor: pointer;
 }
 .header a {
-    color: #f7f7f7;
+    color: var(--orange);
     
 }
 .header a:hover{
-    color: var(--orange);
+    color: var(--text);
+    transition: 0.3s ease-in;
 }
 .section{
 
@@ -56,23 +70,57 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2% 2%;
-    
-
+    padding: 4% 2%;
+  
 }
-.section__content{
+.section__content h1{
 
-    color: var(--white);
+    color: var(--orange);
     font-size: 4rem;
-    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    margin-bottom: 2%;
+
     
 }
-.section.in-page .section__content{
+.section__content p{
+
+    color: var(--text);
+    font-size: 1rem;
+    padding-right: 10%;
+    font-family: "Press Start 2P", serif;
+    line-height: 150%;
+    
+}
+.section__content #git{
+
+    color: var(--orange);
+    font-size: 1rem;
+    font-family: "Press Start 2P", serif;
+
+    
+}
+/* .section.in-page .section__content{
     opacity: 1;
-    transform: scale(0.9);
+    transform: scale(1);
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+} */
+.skills_icon{
+    display: flex;
+    margin-top: 2%;
     
-    
+
 }
+
+.badge {
+
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 2px var(--orange);
+    margin-right: 1%;
+    color: var(--text);
+    font-size: 1.2rem;
+  }
 
 .panel{
     width: 100%;
@@ -82,7 +130,7 @@ body{
     display: flex;
     
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--orange);
     
     z-index: 2;
 }
@@ -93,12 +141,12 @@ body{
 .intro{
     font-size: 2rem;
     font-weight: bold;
-    color: var(--orange);
+    color: var(--cream);
 }
 .panel-title{
     font-size: 5rem;
     font-weight: bold;
-    color: var(--orange);
+    color: var(--cream);
 }
 
 .fade-in{
