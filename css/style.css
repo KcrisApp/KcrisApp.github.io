@@ -98,6 +98,16 @@ body{
 
     
 }
+.skills{
+
+    margin-top: 5%;
+    padding-right: 10%;
+}   
+.skills h5{
+    color: var(--orange);
+    font-size: 1.4rem;
+    margin:2% 0 2% 0;
+}
 /* .section.in-page .section__content{
     opacity: 1;
     transform: scale(1);
@@ -120,7 +130,26 @@ body{
     margin-right: 1%;
     color: var(--text);
     font-size: 1.2rem;
+    animation: pulse 1s infinite alternate;
   }
+.badge:hover{
+    background-color: var(--orange);
+    color: var(--cream);
+    transition: 0.3s ease-in-out;
+    
+}
+
+
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: var(--cream) 0px 0px 0px 0px;
+    }
+    100% {
+        box-shadow: var(--orange) 0px 0px 5px 0px;
+    }
+  }
+
 
 .panel{
     width: 100%;
@@ -136,6 +165,25 @@ body{
 }
 .container{
     padding-left: 5%;
+}
+
+
+
+
+.brand_icon{
+    font-size: 3rem;
+    color: var(--cream);
+    padding: 2%;
+}
+.brand_icon:hover{
+    color: var(--text);
+    transition: 0.3s ease-in;
+}
+.panel__contact_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 5%;
 }
 
 .intro{
