@@ -214,6 +214,20 @@ body{
 /* Mobile */
 
 @media only screen and (max-width: 600px) {
+
+    .header__nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-top: 150px;
+        margin-right: -130px;
+        padding: 20px 20px;
+        rotate: 90deg;
+        width: 300px;
+        z-index: 1;
+    }
+
+    
     .section__content h1{
         font-size: 2rem;
         margin-bottom: 2%;
